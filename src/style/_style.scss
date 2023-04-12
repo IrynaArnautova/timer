@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: 0;
+  box-sizing: border-box;
+  border: 0;
+  list-style: none;
+}
+html {
+  overflow-x: hidden;
+  font-size: 0.0625vw;
+}
+
+body {
+  font: 400 20rem/24rem 'Raleway', sans-serif;
+  color: #212529;
+}
+main {
+  text-align: center;
+  padding: 100rem 0;
+}
+h1 {
+  margin: 0 0 40rem;
+}
+.timer {
+  &_items {
+    display: flex;
+    justify-content: center;
+  }
+  &_item {
+    position: relative;
+    margin: 0 20rem;
+    padding: 0 0 30rem;
+    color: $red;
+    font: 400 100rem/140rem 'Bebas Neue', sans-serif;
+    &::before {
+      content: attr(data-title);
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      font-size: 20rem;
+      line-height: 22rem;
+    }
+  }
+}
+
+
+
